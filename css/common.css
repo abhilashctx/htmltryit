@@ -1,0 +1,66 @@
+a
+{
+    color: maroon;
+    font-family: Tahoma, verdana, arial, helvetica;
+    font-size: 8pt;
+    font-weight: normal;
+	text-decoration: none;
+}
+
+font.heading
+{
+    color: maroon;
+    font-family: Tahoma, verdana, arial, helvetica;
+    font-size: 20pt;
+    font-weight: normal;
+	text-decoration: none;
+}
+
+table
+{ 
+	background-color: white;
+	font-family:'Verdana';
+	font-size:'8pt';
+}
+
+table.strutsmenu
+{ 
+	background-color: white;
+	font-family:'Verdana';
+	font-size:'8pt';
+	border: solid;
+	border-width: 1pts;
+	border-color: rgb(62,91,113);
+}
+
+td, th, tr, input, select, textarea, span, .text-bold
+{
+    color: black;
+    font-family: Tahoma, verdana, arial, helvetica;
+    font-size: 8pt;
+    font-weight: normal;
+	text-decoration: none;
+}
+
+td.strutsmenu, th.strutsmenu
+{
+    color: black;
+    font-family: Tahoma, verdana, arial, helvetica;
+    font-size: 8pt;
+    font-weight: normal;
+	text-decoration: none;
+	border: solid;
+	border-width: 1pts;
+	border-color: rgb(62,91,113);
+}
+
+th.subheading
+{
+    color: white;
+	background-color: rgb(62,91,113);
+    font-family: Tahoma, verdana, arial, helvetica;
+    font-size: 10pt;
+    font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+}

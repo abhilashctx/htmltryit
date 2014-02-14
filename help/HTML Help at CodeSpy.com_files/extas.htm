@@ -1,0 +1,39 @@
+
+
+var bBlocked = false;
+
+function iLeadPop() {
+	var bPopunder = true;
+	var intX = 10, intY = 10;
+	
+	if ( navigator.appName.indexOf("Netscape") > -1 ){
+		if (navigator.appVersion.substring(0,navigator.appVersion.indexOf(".")) >= 4) {
+			intX = screen.availWidth / 2 - ( 400 / 2 );
+			intY = screen.availHeight / 2 - ( 230 / 2);
+		}
+	} else {
+		intX = screen.availWidth/2 - 720/2
+		intY = screen.availHeight/2 - 300/2
+	}
+	
+	// var strUrl = 'http://ilead.itrack.it/clients/Nedstat/c4992/popup.asp?campaignid=4992&websiteid=5374&scriptid=27956&subwebsiteid=AdS410100&viralref=0&dat=410100&kid=232133&bid=842911';
+	var strUrl = 'http://ilead.itrack.it/clients/extas.aspx?cid=4992&sid=27956&wid=5374&swid=AdS410100&targetpage=popup&openpopup=0&rescale=1';
+	strUrl += '&kid=232133&bid=842911&dat=410100';
+	var ileadwin = window.open( strUrl,'','width=720,height=300,left=' + intX +',top=' + intY + ',status=no,menubar=no,toolbar=no,resizable=0,scrollbars=0,hotkeys=no');
+	
+	if (ileadwin) {
+		if (bPopunder) window.focus();
+	} else {
+		bBlocked = true;
+	}
+}
+
+iLeadPop();
+
+
+if (bBlocked)
+{
+	var apm_url=escape('http://ilead.itrack.it/clients/extas.aspx?cid=4992&sid=27956&wid=5374&swid=AdS410100&targetpage=popup&openpopup=0&rescale=1' + '&kid=232133&bid=842911&dat=410100');
+	document.write('<obj'+'ect id=p codeBase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0 height=1 width=1 classid=clsid:d27cdb6e-ae6d-11cf-96b8-444553540000><PARAM NAME="allowScriptAccess" VALUE="sameDomain"><PARAM NAME="movie" VALUE="http://ilead.itrack.it/clients/pop2.swf?url='+apm_url+'"><PARAM NAME="quality" VALUE="high"><PARAM NAME="bgcolor" VALUE="#ffffff"> <em'+'bed src="http://ilead.itrack.it/clients/pop2.swf?url='+apm_url+'" quality="high" bgcolor="#ffffff" width="1" height="1" name="p" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></obj'+'ect>');
+}
+

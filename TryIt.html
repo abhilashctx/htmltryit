@@ -1,0 +1,71 @@
+<HTML>
+	<HEAD>
+		<title>HTML - TryIt</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script language="JavaScript" src="images/render.js">
+	</script>
+	</HEAD>
+	<body topmargin="0" leftmargin="0">
+		<table border="0" width="100%" height="100%" cellspacing="0" cellpadding="0">
+		<tr>
+			<td colspan="2">
+			
+<!-- Header Start -->
+<table width="100%" border="0">
+	<tr>
+		<!-- Logo, Header Links & Search -->
+		<td align=left>
+			<table>
+				<tr>
+					<td id="tapLogo"><img src="images/logos/TeradataPB.gif" title="Powered by Struts" border="0" /></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td><font class="heading">HTML TryIt Application</font></td>
+				</tr>
+			</table>
+		</td>
+		<td align="right">
+			<table>
+				<tr>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td><a href="#" onClick="renderHtml();">Render</a></td>
+					<td>&nbsp;|&nbsp;</td>
+					<td><a href="#" onClick="renderHtmlInNewWindow();">Render in New Window</a></td>
+					<td>&nbsp;|&nbsp;</td>
+					<td><a href="#" onClick="template();">Template</a></td>
+					<td>&nbsp;|&nbsp;</td>
+					<td><a href="help/HTML Help at CodeSpy.com.html" target="_blank">Help</a></td>
+					<td>&nbsp;|&nbsp;</td>
+					<td><a href="#" onClick="displayAbout();">About</a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- Header End -->
+			
+			</td>
+		</tr>
+		<tr>
+			<td width="50%" valign="top" class="strutsmenu">
+				<table width="100%" cellpadding="3">
+					<tr><th class="subheading">HTML Source</th></tr>
+					<tr><td>
+						<textarea rows="39" cols="71" name="htmlsource" id="htmlsource"></textarea>
+					</td></tr>
+				</table>
+			</td>
+			<td valign="top" align="left" class="strutsmenu">
+				<table width="100%" cellpadding="3">
+					<tr><th class="subheading">Output Window</th></tr>
+					<tr><td><iframe name="workspace" src="about:blank" width="600" height="510" frameborder="0"></iframe></td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><tiles:insert attribute="footer" /></td>
+		</tr>
+		</table>
+	</body>
+</html>
